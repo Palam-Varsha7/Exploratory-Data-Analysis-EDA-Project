@@ -1,0 +1,78 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║                    EDA ANALYSIS REPORT                           ║
+║                    Titanic Dataset                               ║
+╚══════════════════════════════════════════════════════════════════╝
+
+1. EXECUTIVE SUMMARY
+───────────────────────────────────────────────────────────────────
+• Dataset: Titanic passenger manifest with 891 records
+• Target Variable: Survival (0 = Died, 1 = Survived)
+• Overall Survival Rate: 38.4%
+
+2. KEY FINDINGS
+───────────────────────────────────────────────────────────────────
+
+A. DEMOGRAPHIC PATTERNS
+   • Gender is the strongest predictor of survival
+     - Female survival rate: 74.2%
+     - Male survival rate: 18.9%
+     - Females were 3.9x more likely to survive
+
+B. SOCIOECONOMIC FACTORS
+   • Passenger class significantly impacts survival
+     - 1st Class: 63.0% survival
+     - 2nd Class: 47.3% survival  
+     - 3rd Class: 24.2% survival
+   • Higher fare passengers had better survival rates
+
+C. FAMILY DYNAMICS
+   • Passengers with small families (2-4 members) had highest survival
+   • Solo travelers had lower survival rates than those with family
+   • Very large families (7+) had poor survival outcomes
+
+D. AGE FACTORS
+   • Children (under 12) had higher survival rates (~50%+)
+   • Elderly passengers (60+) had lower survival rates
+   • Working-age adults had moderate survival rates
+
+E. EMBARKATION PORT
+   • Cherbourg passengers had highest survival rate (55.4%)
+   • Queenstown and Southampton had lower rates
+
+3. STATISTICAL INSIGHTS
+───────────────────────────────────────────────────────────────────
+• Strongest negative correlation with survival: Passenger Class (-0.34)
+• Fare shows moderate negative correlation (-0.26)
+• Age has weak negative correlation (-0.07)
+• Family size shows complex relationship (optimal size 2-4)
+
+4. VISUAL INSIGHTS
+───────────────────────────────────────────────────────────────────
+• Pie chart shows clear imbalance: more deaths than survivals
+• Bar charts reveal dramatic gender and class differences
+• Age distribution histograms show survival patterns across ages
+• Box plots demonstrate fare disparities between classes
+• Heatmap confirms key correlations numerically
+• Line plot shows optimal family size for survival
+• Grouped bar chart reveals class × gender interaction
+
+5. CONCLUSIONS & IMPLICATIONS
+───────────────────────────────────────────────────────────────────
+The Titanic disaster reveals clear patterns of survival that reflect 
+the social norms and practical realities of the evacuation:
+
+1. "Women and children first" policy was largely followed
+2. Socioeconomic status (class/fare) provided significant advantage
+3. Family connections influenced survival outcomes
+4. The ship's layout and lifeboat access favored certain groups
+
+These patterns demonstrate how historical events can be analyzed through 
+data to understand social dynamics and human behavior under crisis.
+
+6. RECOMMENDATIONS FOR FURTHER ANALYSIS
+───────────────────────────────────────────────────────────────────
+• Build predictive models using these key features
+• Analyze survival patterns by cabin location (if data available)
+• Investigate time-to-rescue factors
+• Compare with other maritime disasters for broader insights
